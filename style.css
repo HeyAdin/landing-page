@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 
 * {
     margin: 0;
@@ -9,6 +10,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+em{
+    font-family: urban;
+}
 
 .main-container {
     display: flex;
@@ -18,13 +22,41 @@ body {
 }
 
 .header {
-    background-color: #47576e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #64a3c0;
     color: white;
     font-family: roboto;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 1.3rem 10rem;
+}
+.header .logo{
+    cursor: pointer;
+    letter-spacing: 4.5px;
+}
+
+.right-header {
+    display: flex;
+    list-style: none;
+}
+.right-header li a{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    font-weight: 500;
+}
+
+.right-header li a:hover{
+    color: rgb(228, 183, 183);
 }
 
 .body {
     flex: 1;
 }
+
 
 .footer {}
